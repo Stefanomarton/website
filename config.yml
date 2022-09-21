@@ -1,4 +1,4 @@
-baseURL: "https://Stefanomarton.github.io/website/" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
+baseURL: "https://stefanomarton.github.io/website/" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 title: Stefano Marton Static Website
 paginate: 5
 theme: PaperMod
