@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://stefanomarton.github.io/website/sitemap.xml
