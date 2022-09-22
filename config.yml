@@ -1,0 +1,202 @@
+baseURL: "https://stefanomarton.github.io/website/" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
+title:
+paginate: 5
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+googleAnalytics: UA-123-45
+
+minify:
+    disableXML: true
+    minifyOutput: true
+
+languages:
+    en:
+        languageName: ":uk:"
+        weight: 1
+        taxonomies:
+          category: categories
+          tag: tags
+          series: series
+        menu:
+            main:
+                - name: Posts
+                  url: posts
+                  weight: 5
+    it:
+        languageName: ":it:"
+        languageAltTitle: Italiano
+        weight: 2
+        title: 
+        taxonomies:
+          category: categories
+          tag: tags
+          series: series
+        profileMode:
+            enabled: true
+            title : Ciao, sono Stefano Marton
+            imageUrl: "https://github.com/Stefanomarton/website/blob/main/IMG_2801.jpg?raw=true"
+            imageTitle: ProfileMode image
+            imageWidth: 300
+            imageHeight: 300 
+            subtitle: "Laurendo in chimica all'Università degli Studi di Milano <br>
+                       Artigiano digitale <br>
+                       Amante di stampanti 3D e Arch Linux"
+                        
+            Content: >
+              Welcome to demo of hugo's theme PaperMod.
+
+              - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
+
+              - Do give a 🌟 on Github !
+
+               - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
+
+            buttons:
+                - name: Blog
+                  url: posts
+                - name: Profile Mode
+                  url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
+        menu:
+            main:
+                - name: Posts
+                  url: posts
+                  weight: 5
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+    author: Theme PaperMod
+    # author: ["Me", "You"] # multiple authors
+
+    defaultTheme: dark
+    # disableThemeToggle: true
+    ShowShareButtons: true
+    ShowReadingTime: true
+    # disableSpecial1stPost: true
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowRssButtonInSectionTermList: true
+    ShowToc: true
+    # comments: false
+    images: ["papermod-cover.png"]
+
+    profileMode:
+        enabled: true
+        title: Hi there, I'm Stefano Marton !
+        subtitle: "Majoring in chemistry at Università degli studi di Milano <br>
+                   Digital craftsman <br>
+                   Owner of way to many selfbuild 3DPrinter<br>
+                   Linux lover"
+        Content: >
+            Welcome to demo of hugo's theme PaperMod.
+
+            - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
+
+            - Do give a 🌟 on Github !
+
+        imageUrl: "https://github.com/Stefanomarton/website/blob/main/IMG_2801.jpg?raw=true"
+        imageTitle: my image
+        imageWidth: 300
+        imageHeight: 300
+        buttons:
+            - name: Archives
+              url: archives
+            - name: Posts
+              url: posts
+
+    socialIcons:
+        - name: github
+          url: "https://github.com/Stefanomarton"
+        # - name: KoFi
+        #   url: "https://ko-fi.com/adityatelange"
+        # - name: Rss
+        #   url: "index.xml"
+        - name: linkedin
+          url : prova
+
+    # editPost:
+    #     URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
+    #     Text: "Suggest Changes" # edit text
+    #     appendFilePath: true # to append file path to Edit link
+
+    # label:
+    #     text: "Home"
+    #     icon: icon.png
+    #     iconHeight: 35
+
+    # analytics:
+    #     google:
+    #         SiteVerificationTag: "XYZabc"
+
+    assets:
+        disableHLJS: true
+        favicon: "<link / abs url>"
+        favicon16x16: "<link / abs url>"
+        favicon32x32: "<link / abs url>"
+        apple_touch_icon: "<link / abs url>"
+        safari_pinned_tab: "<link / abs url>"
+
+    cover:
+        hidden: true # hide everywhere but not in structured data
+        hiddenInList: true # hide on list pages and home
+        hiddenInSingle: true # hide on single page
+
+    # fuseOpts:
+    #     isCaseSensitive: false
+    #     shouldSort: true
+    #     location: 0
+    #     distance: 1000
+    #     threshold: 0.4
+    #     minMatchCharLength: 0
+    #     keys: ["title", "permalink", "summary", "content"]
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        noClasses: false
+        # anchorLineNos: true
+        # codeFences: true
+        # guessSyntax: true
+        # lineNos: true
+        # style: monokai
+
+privacy:
+    vimeo:
+        disabled: false
+        simple: true
+
+    twitter:
+        disabled: false
+        enableDNT: true
+        simple: true
+
+    instagram:
+        disabled: false
+        simple: true
+
+    youtube:
+        disabled: false
+        privacyEnhanced: true
+
+services:
+    instagram:
+        disableInlineCSS: true
+    twitter:
+        disableInlineCSS: true
