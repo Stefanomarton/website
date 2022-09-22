@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://stefanomarton.github.io/website/it/</loc>
+    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://stefanomarton.github.io/website/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://stefanomarton.github.io/website/it/"
+                />
+  </url><url>
     <loc>https://stefanomarton.github.io/website/it/tags/emoji/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -29,19 +42,6 @@
                 rel="alternate"
                 hreflang="it"
                 href="https://stefanomarton.github.io/website/it/posts/"
-                />
-  </url><url>
-    <loc>https://stefanomarton.github.io/website/it/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://stefanomarton.github.io/website/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://stefanomarton.github.io/website/it/"
                 />
   </url><url>
     <loc>https://stefanomarton.github.io/website/it/tags/</loc>
