@@ -1,5 +1,5 @@
 baseURL: "https://stefanomarton.github.io/" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
-title:
+title: Stefano Marton
 paginate: 5
 theme: PaperMod
 
@@ -19,21 +19,29 @@ minify:
 languages:
     en:
         languageName: ":uk:"
-        weight: 1
+        weight: 20
         taxonomies:
           category: categories
           tag: tags
           series: series
         menu:
             main:
+
+
+                - name: Home
+                  url: /
+                  weight: 1
+
+
                 - name: Posts
                   url: posts
-                  weight: 5
+                  weight: 2
+
     it:
         languageName: ":it:"
         languageAltTitle: Italiano
         weight: 2
-        title: 
+        title: Stefano Marton
         taxonomies:
           category: categories
           tag: tags
@@ -45,24 +53,18 @@ languages:
             imageTitle: ProfileMode image
             imageWidth: 300
             imageHeight: 300 
-            subtitle: "Laurendo in chimica all'Università degli Studi di Milano <br>
-                       Artigiano digitale <br>
-                       Amante di stampanti 3D e Arch Linux"
+            subtitle: "📚 Laurendo in chimica all'Università degli Studi di Milano <br>
+                       ⚙️  Artigiano digitale <br>
+                       🐧 Amante di stampanti 3D e Arch Linux"
                         
-            Content: >
-              Welcome to demo of hugo's theme PaperMod.
-
-              - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
-
-              - Do give a 🌟 on Github !
-
-               - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
+            Content: Ecco il mio piccolo pezzo di internet <br>
+                     Qui puoi trovare i link a tutti i miei account social ed ai miei progetti
 
             buttons:
-                - name: Blog
-                  url: posts
-                - name: Profile Mode
-                  url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
+                # - name: Blog
+                #   url: posts
+                # - name: Profile Mode
+                #   url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
         menu:
             main:
                 - name: Posts
@@ -98,26 +100,26 @@ params:
     profileMode:
         enabled: true
         title: Hi there, I'm Stefano Marton !
-        subtitle: "Majoring in chemistry at Università degli studi di Milano <br>
-                   Digital craftsman <br>
-                   Owner of way to many selfbuild 3DPrinter<br>
-                   Linux lover"
+        subtitle: "📚 Majoring in chemistry at Università degli studi di Milano <br>
+                   ⚙️  Digital craftsman <br>
+                   🖨️ Owner of way to many selfbuild 3DPrinter<br>
+                   🐧 Linux lover"
         Content: >
-            Welcome to demo of hugo's theme PaperMod.
+            Welcome to my small internet land piece! <br>
+            Here you can find links for all of my social media and projects !
+             
+            
 
-            - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
-
-            - Do give a 🌟 on Github !
 
         imageUrl: "https://github.com/Stefanomarton/website/blob/master/IMG_2801.jpg?raw=true"
         imageTitle: my image
         imageWidth: 300
         imageHeight: 300
         buttons:
-            - name: Archives
-              url: archives
-            - name: Posts
-              url: posts
+            # - name: Archives
+            #   url: archives
+            # - name: Posts
+            #   url: posts
 
     socialIcons:
         - name: github
@@ -127,7 +129,7 @@ params:
         # - name: Rss
         #   url: "index.xml"
         - name: linkedin
-          url : prova
+          url : https://www.linkedin.com/in/stefano-marton-94802823a/
 
     # editPost:
     #     URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
