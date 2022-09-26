@@ -37,39 +37,39 @@ languages:
                   url: posts
                   weight: 2
 
-    it:
-        languageName: ":it:"
-        languageAltTitle: Italiano
-        weight: 2
-        title: Stefano Marton
-        taxonomies:
-          category: categories
-          tag: tags
-          series: series
-        profileMode:
-            enabled: true
-            title : Ciao, sono Stefano Marton
-            imageUrl: "https://github.com/Stefanomarton/website/blob/master/IMG_2801.jpg?raw=true"
-            imageTitle: ProfileMode image
-            imageWidth: 300
-            imageHeight: 300 
-            subtitle: "📚 Laurendo in chimica all'Università degli Studi di Milano <br>
-                       ⚙️  Artigiano digitale <br>
-                       🐧 Amante di stampanti 3D e Arch Linux"
-                        
-            Content: Ecco il mio piccolo pezzo di internet <br>
-                     Qui puoi trovare i link a tutti i miei account social ed ai miei progetti
-
-            buttons:
-                # - name: Blog
-                #   url: posts
-                # - name: Profile Mode
-                #   url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
-        menu:
-            main:
-                - name: Posts
-                  url: posts
-                  weight: 5
+    # it:
+    #     languageName: ":it:"
+    #     languageAltTitle: Italiano
+    #     weight: 2
+    #     title: Stefano Marton
+    #     taxonomies:
+    #       category: categories
+    #       tag: tags
+    #       series: series
+    #     profileMode:
+    #         enabled: true
+    #         title : Ciao, sono Stefano Marton
+    #         imageUrl: "https://github.com/Stefanomarton/website/blob/master/IMG_2801.jpg?raw=true"
+    #         imageTitle: ProfileMode image
+    #         imageWidth: 300
+    #         imageHeight: 300 
+    #         subtitle: "📚 Laurendo in chimica all'Università degli Studi di Milano <br>
+    #                    ⚙️  Artigiano digitale <br>
+    #                    🐧 Amante di stampanti 3D e Arch Linux"
+    #                     
+    #         Content: Ecco il mio piccolo pezzo di internet <br>
+    #                  Qui puoi trovare i link a tutti i miei account social ed ai miei progetti
+    #
+    #         buttons:
+    #             # - name: Blog
+    #             #   url: posts
+    #             # - name: Profile Mode
+    #             #   url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
+    #     menu:
+    #         main:
+    #             - name: Posts
+    #               url: posts
+    #               weight: 5
 
 outputs:
     home:
