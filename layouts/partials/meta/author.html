@@ -1,0 +1,10 @@
+{{ with .Params.author }}
+    <span class="author">&mdash;
+        {{ if (reflect.IsSlice .) }}
+            {{ delimit . ", " }}
+        {{ else }}
+            {{ . }}
+        {{ end }}
+    </span>
+{{ end }}
+

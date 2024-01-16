@@ -1,0 +1,188 @@
+baseURL = "https://stefanomarton.github.io/"
+
+defaultContentLanguage = "en"
+
+languageCode = "en"
+
+title = "The Nerdy Chemist"
+
+description = "welcome to my little piece of the internet"
+
+# Change the default theme to be use when building the site with Hugo
+# theme = "DoIt"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = ""
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+    weight = 2
+  # [[menu.main]]
+  #   identifier = "categories"
+  #   pre = ""
+  #   post = ""
+  #   name = "Categories"
+  #   url = "/categories/"
+  #   title = ""
+  #   weight = 3
+
+# Markup related configuration in Hugo
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
+
+markup.highlight.codeFences=true
+
+[params]
+version = "0.3.X"
+# dateFormat = "25.01.2001"
+defaultTheme = "black"
+ 
+ [params.page.math]
+      enable = true
+      # default block delimiter is $$ ... $$ and \\[ ... \\]
+      blockLeftDelimiter = ""
+      blockRightDelimiter = ""
+      # default inline delimiter is $ ... $ and \\( ... \\)
+      inlineLeftDelimiter = ""
+      inlineRightDelimiter = ""
+      # KaTeX extension copy_tex
+      copyTex = true
+      # KaTeX extension mhchem
+      mhchem = true
+
+  [params.home.profile]
+    enable = true
+    # Gravatar Email for preferred avatar in home page
+    gravatarEmail = "sstefanomarton@gmail.com"
+    # URL of avatar shown in home page
+    title = "Stefano Marton"
+    # subtitle shown in home page
+    subtitle = "welcome to my little piece of the internet"
+    # whether to use typeit animation for subtitle
+    typeit = true
+    # whether to show social links
+    social = true
+    # DoIt NEW | 0.2.0 disclaimer (HTML format is supported)
+
+  [params.header]
+    # desktop header mode ("fixed", "normal", "auto")
+    desktopMode = "auto"
+    # mobile header mode ("fixed", "normal", "auto")
+    mobileMode = "auto"
+    # DoIt NEW | 0.2.11 Theme change mode
+    # theme change mode ("switch", "select")
+    themeChangeMode = "select"
+    # DoIt NEW | 0.2.0 Header title config
+
+  [params.page]
+    # DoIt NEW | 0.2.0 whether to hide a page from home page
+    hiddenFromHomePage = false
+    # DoIt NEW | 0.2.0 whether to hide a page from search results
+    hiddenFromSearch = false
+    # DoIt NEW | 0.2.0 whether to enable twemoji
+    twemoji = false
+    # whether to enable lightgallery
+    lightgallery = false
+    # DoIt NEW | 0.2.0 whether to enable the ruby extended syntax
+    ruby = true
+    # DoIt NEW | 0.2.0 whether to enable the fraction extended syntax
+    fraction = true
+    # DoIt NEW | 0.2.0 whether to enable the fontawesome extended syntax
+    fontawesome = true
+    # whether to show link to Raw Markdown content of the content
+    linkToMarkdown = true
+    # DoIt NEW | 0.2.14 configure the link to the source file of the post
+    linkToSource = false
+    # "https://github.com/user/repo/blob/main/{path}"
+    # DoIt NEW | 0.2.13 configure the link to edit the post
+    linkToEdit = false
+    # "https://github.com/user/repo/edit/main/{path}"
+    # "https://gitlab.com/user/repo/-/edit/main/{path}"
+    # "https://bitbucket.org/user/repo/src/main/{path}?mode=edit"
+    # DoIt NEW | 0.2.14 configure the link to report issue for the post
+    linkToReport = false
+    # "https://github.com/user/repo/issues/new?title=[bug]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0A|Url|{url}|%0A|Filename|https://github.com/user/repo/blob/main/{path}|"
+    # DoIt NEW | 0.2.4 whether to show the full text content in RSS
+    rssFullText = false
+    # DoIt NEW | 0.2.13 whether to enable series navigation
+    seriesNavigation = true
+    # whether to enable last modified time
+    enableLastMod = false
+    # whether to enable word count
+    enableWordCount = false
+    # whether to enable reading time estimation
+    enableReadingTime = false
+    # DoIt NEW | 0.2.13 outdated article reminder config
+
+    [params.page.toc]
+      # whether to enable the table of the contents
+      enable = true
+      # DoIt NEW | 0.2.9 whether to keep the static table of the contents in front of the post
+      keepStatic = false
+      # whether to make the table of the contents in the sidebar automatically collapsed
+
+
+  [params.footer]
+    enable = false
+    # DoIt NEW | 0.2.0 Custom content (HTML format is supported)
+    custom = ''
+    # DoIt NEW | 0.2.0 whether to show Hugo and theme info
+    hugo = true
+    # DoIt NEW | 0.2.14 Hosted on (HTML format is supported)
+    # <a title="Github Pages" href="https://docs.github.com/en/pages/" target="_blank" rel="noopener noreffer">GitHub Pages</a>
+    hostedOn = ''
+    # DoIt NEW | 0.2.0 whether to show copyright info
+    copyright = true
+    # DoIt NEW | 0.2.0 whether to show the author
+    author = true
+    # Site creation time
+    since = 2019
+    # ICP info only in China (HTML format is supported)
+    icp = ""
+    # license info (HTML format is supported)
+    license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+[params.social]
+  [params.social.Github]
+    # weight when arranging icons (the greater the weight, the later the icon is positioned)
+    weight = 0
+    # your social ID
+    id = "Stefanomarton"
+    # prefix of your social link
+    prefix = "https://github.com"
+    # content hovering on the icon
+    title = "GitHub"
+
+
+# Author config
+[author]
+  name = "Stefano Marton"
+  email = "sstefanomarton@gmail.com"
+  link = ""
+  avatar = ""
+  gravatarEmail = ""
+
+[[module.mounts]]
+source = 'static'
+target = 'static'
+
+# [[module.mounts]]
+# source = 'images'
+# target = 'static/images'
