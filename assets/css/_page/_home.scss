@@ -83,7 +83,8 @@
     padding-top: 1rem;
     padding-bottom: 0.8rem;
     color: $global-font-color;
-    // border-bottom: 3px dashed $global-border-color;
+    // changed to solid line
+    border-bottom: 1px solid $global-border-color;
 
     [theme="dark"] & {
       color: $global-font-color-dark;
