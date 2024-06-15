@@ -127,7 +127,7 @@ other = "Share on"
 other = "Contents"
 
 [publishedOnDate]
-other = "published on {{ .Date }}"
+other = "{{.Date}}"
 
 [includedIn]
 other = "included in "
