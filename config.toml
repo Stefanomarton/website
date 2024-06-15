@@ -68,7 +68,6 @@ defaultTheme = "black"
     typeit = true
     # whether to show social links
     social = true
-    # DoIt NEW | 0.2.0 disclaimer (HTML format is supported)
 
   [params.header]
     # desktop header mode ("fixed", "normal", "auto")
