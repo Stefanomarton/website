@@ -8,9 +8,6 @@ title = "The Nerdy Chemist"
 
 description = "welcome to my little piece of the internet"
 
-# Change the default theme to be use when building the site with Hugo
-# theme = "DoIt"
-
 [menu]
   [[menu.main]]
     identifier = "posts"
@@ -31,14 +28,6 @@ description = "welcome to my little piece of the internet"
     url = "/tags/"
     title = ""
     weight = 2
-  # [[menu.main]]
-  #   identifier = "categories"
-  #   pre = ""
-  #   post = ""
-  #   name = "Categories"
-  #   url = "/categories/"
-  #   title = ""
-  #   weight = 3
 
 # Markup related configuration in Hugo
 [markup]
@@ -169,7 +158,6 @@ defaultTheme = "black"
     prefix = "https://github.com"
     # content hovering on the icon
     title = "GitHub"
-
 
 # Author config
 [author]
