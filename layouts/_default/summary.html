@@ -28,23 +28,29 @@
         </div>
     {{- end -}}
 
-    {{- /* Title */ -}}
-    <h1 class="single-title" itemprop="name headline">
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-    </h1>
+        {{- /* Title */ -}}
+     <h1 class="single-title" itemprop="name headline">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a> 
+     </h1>
 
     {{- /* Meta */ -}}
     <div class="post-meta">
-        <span class="post-author">
-            {{- partial "meta/author" . }}
-        </span>
-
         {{- with .Site.Params.dateFormat | default "2006-01-02" | .PublishDate.Format -}}
-            &nbsp;<span class="post-publish">
-                {{- printf `<time datetime="%v">%v</time>` . . | dict "Date" | T "publishedOnDate" | safeHTML -}}
+            <span class="post-publish">
+          {{- printf `<time datetime="%v">%v</time>` . . | dict "Date" | T "publishedOnDate" | safeHTML -}}
+        </span>
+        {{- end -}}
+        <!-- FIX: add tag after date -->
+        {{- with .Params.tags -}}
+           &nbsp;<span class="post-tags">
+                &nbsp&nbsp&nbsp<i class="fas fa-tags fa-fw"></i>&nbsp;
+                {{- range $index, $value := . -}}
+                    {{- if gt $index 0 }},&nbsp;{{ end -}}
+                    {{- $tag := partialCached "function/path.html" $value $value | printf "/tags/%v" | $.Site.GetPage -}}
+                    <a href="{{ $tag.RelPermalink }}">{{ $tag.Title }}</a>
+                {{- end -}}
             </span>
         {{- end -}}
-
         {{- with (or (.Params.categories) (.Params.series)) -}}
         &nbsp;<span class="post-category">
             {{- T "includedIn" | safeHTML -}}
@@ -91,16 +97,18 @@
 
     {{- /* Footer */ -}}
     <div class="post-footer">
-        <a href="{{ .RelPermalink }}">{{ T "readMore" }}</a>
-        {{- with .Params.tags -}}
-            <div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;
-                {{- range $index, $value := . -}}
-                    {{- if gt $index 0 }},&nbsp;{{ end -}}
-                    {{- $tag := partialCached "function/path.html" $value $value | printf "/tags/%v" | $.Site.GetPage -}}
-                    <a href="{{ $tag.RelPermalink }}">{{ $tag.Title }}</a>
-                {{- end -}}
-            </div>
-        {{- end -}}
+        <!-- comment out read more text in post preview -->
+        <!-- <a href="{{ .RelPermalink }}">{{ T "readMore" }}</a> -->
+        <!-- {{- with .Params.tags -}} -->
+        <!--  FIX: remove tags from bottom
+            <!-- <div class="post-tags"> -->
+            <!--     <i class="fas fa-tags fa-fw"></i>&nbsp; -->
+            <!--     {{- range $index, $value := . -}} -->
+            <!--         {{- if gt $index 0 }},&nbsp;{{ end -}} -->
+            <!--         {{- $tag := partialCached "function/path.html" $value $value | printf "/tags/%v" | $.Site.GetPage -}} -->
+            <!--         <a href="{{ $tag.RelPermalink }}">{{ $tag.Title }}</a> -->
+            <!--     {{- end -}} -->
+            <!-- </div> -->
+        <!-- {{- end -}} -->
     </div>
 </article>
